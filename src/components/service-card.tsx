@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+
 import { Card, CardContent } from "@/components/ui/card";
 import { SiteImage } from "@/components/site-image";
 import type { SiteImageKey } from "@/lib/site-images";
@@ -22,10 +22,6 @@ export function ServiceCard({ title, description, image }: SubService) {
       <CardContent className="p-6">
         <h3 className="text-xl">{title}</h3>
         <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{description}</p>
-        <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-primary">
-          Află mai multe
-          <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" aria-hidden />
-        </span>
       </CardContent>
     </Card>
   );
