@@ -3,6 +3,12 @@ import ovidiuAsset from "@/assets/dr-ovidiu-darie.jpg.asset.json";
 import florinaAsset from "@/assets/dr-florina-halmagy.jpg.asset.json";
 import lorenaAsset from "@/assets/dr-lorena-cimponerescu.jpg.asset.json";
 import vladAsset from "@/assets/dr-vlad-popescu.jpg.asset.json";
+import consultatiiAsset from "@/assets/consultatiidermatovenerologie.jpg.asset.json";
+import dermatoscopieAsset from "@/assets/dermatoscopie.jpg.asset.json";
+import chiuretareAsset from "@/assets/chiuretare.jpg.asset.json";
+import electroAsset from "@/assets/electrocauterizare.jpg.asset.json";
+import scleroAsset from "@/assets/scleroterapie.jpg.asset.json";
+import co2Asset from "@/assets/CO2.jpg.asset.json";
 
 /**
  * Imaginile foto ale clinicii.
