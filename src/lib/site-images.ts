@@ -108,7 +108,7 @@ export const siteImages: Record<SiteImageKey, string | null> = {
   hydraBeautyAparat: hydraAparatAsset.url,
   aparatFata: prxAsset.url,
   aparat: null,
-  aparatClinica: null,
+  aparatClinica: aparatClinicaAsset.url,
   laserCO2: co2Asset.url,
   dermapen4: dermapenAsset.url,
   peelingCosmelan: cosmelanAsset.url,
