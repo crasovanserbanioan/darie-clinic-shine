@@ -56,7 +56,10 @@ export type SiteImageKey =
   | "aparatFata"
   | "aparat"
   | "aparatClinica"
-  | "laserCO2";
+  | "laserCO2"
+  | "dermapen4"
+  | "peelingCosmelan"
+  | "mezoterapie";
 
 export const siteImages: Record<SiteImageKey, string | null> = {
   logo: logoAsset.url,
