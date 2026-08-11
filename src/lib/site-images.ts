@@ -30,6 +30,9 @@ import epilareSpotAsset from "@/assets/epilaredefinitiva2.webp.asset.json";
 import epilareCoherentAsset from "@/assets/epilaredefinitiva3.webp.asset.json";
 import epilareWaveAsset from "@/assets/epilaredefinitiva4.png.asset.json";
 import epilareRezultateAsset from "@/assets/epilaredefinitiva5.jpg.asset.json";
+import cladireAsset from "@/assets/CladireClinica.jpg.asset.json";
+import interiorAsset from "@/assets/InteriorClinica.jpg.asset.json";
+import aparatClinicaAsset from "@/assets/Aparat.jpg.asset.json";
 
 /**
  * Imaginile foto ale clinicii.
