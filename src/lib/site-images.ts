@@ -1,4 +1,4 @@
-import logoAsset from "@/assets/Logo.jpg.asset.json";
+import logoAsset from "@/assets/logo-icon.png.asset.json";
 import ovidiuAsset from "@/assets/dr-ovidiu-darie.jpg.asset.json";
 import florinaAsset from "@/assets/dr-florina-halmagy.jpg.asset.json";
 import lorenaAsset from "@/assets/dr-lorena-cimponerescu.jpg.asset.json";
