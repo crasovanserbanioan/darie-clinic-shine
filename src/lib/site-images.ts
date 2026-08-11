@@ -1,3 +1,9 @@
+import logoAsset from "@/assets/logo-icon.png.asset.json";
+import ovidiuAsset from "@/assets/dr-ovidiu-darie.jpg.asset.json";
+import florinaAsset from "@/assets/dr-florina-halmagy.jpg.asset.json";
+import lorenaAsset from "@/assets/dr-lorena-cimponerescu.jpg.asset.json";
+import vladAsset from "@/assets/dr-vlad-popescu.jpg.asset.json";
+
 /**
  * Imaginile foto ale clinicii.
  *
@@ -35,14 +41,14 @@ export type SiteImageKey =
   | "aparatClinica";
 
 export const siteImages: Record<SiteImageKey, string | null> = {
-  logo: null,
+  logo: logoAsset.url,
   interiorClinica: null,
   scaunClinica: null,
   cladireClinica: null,
-  drOvidiuDarie: null,
-  drFlorinaHalmagy: null,
-  drLorenaCimponerescu: null,
-  drVladPopescu: null,
+  drOvidiuDarie: ovidiuAsset.url,
+  drFlorinaHalmagy: florinaAsset.url,
+  drLorenaCimponerescu: lorenaAsset.url,
+  drVladPopescu: vladAsset.url,
   alunitaLupa: null,
   insemnareCreion: null,
   cusut: null,

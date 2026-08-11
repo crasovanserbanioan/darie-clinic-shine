@@ -7,13 +7,13 @@ import { SiteImage } from "@/components/site-image";
 export const Route = createFileRoute("/servicii/hydrafacial")({
   head: () => ({
     meta: [
-      { title: "Hydrafacial — curățare și hidratare a tenului | Clinica Darie" },
+      { title: "HydraBeauty2 — curățare și hidratare a tenului | Clinica Darie" },
       {
         name: "description",
         content:
-          "Hydrafacial la Clinica Darie: curățare, exfoliere, extracție și hidratare într-o singură ședință, fără roșeață și fără timp de recuperare.",
+          "HydraBeauty2 la Clinica Darie: curățare, exfoliere, extracție și hidratare într-o singură ședință, fără roșeață și fără timp de recuperare.",
       },
-      { property: "og:title", content: "Hydrafacial — Clinica Darie" },
+      { property: "og:title", content: "HydraBeauty2 — Clinica Darie" },
       {
         property: "og:description",
         content: "Cel mai avansat tratament de curățare și îngrijire al tenului, în Dumbrăvița.",
@@ -58,7 +58,7 @@ function Page() {
     <PageShell>
       <PageHero
         eyebrow="Servicii"
-        title="Hydrafacial"
+        title="HydraBeauty2"
         lead="Cel mai avansat tratament de curățare și îngrijire al tenului."
       />
 
@@ -67,13 +67,13 @@ function Page() {
           <div className="min-w-0">
             <h2 className="text-3xl">Un singur tratament, cinci acțiuni</h2>
             <p className="mt-4 text-muted-foreground">
-              Hydrafacial este un tratament non-invaziv de curățare, hidratare și rejuvenare a
+              HydraBeauty2 este un tratament non-invaziv de curățare, hidratare și rejuvenare a
               tenului. Combină simultan curățarea, exfolierea, extracția, hidratarea și protecția
               pielii, într-o ședință confortabilă, potrivită oricărui tip de ten.
             </p>
           </div>
           <div className="aspect-[4/3] overflow-hidden rounded-2xl border border-border shadow-soft">
-            <SiteImage name="hydraBeauty" alt="Hydrafacial la Clinica Darie" />
+            <SiteImage name="hydraBeauty" alt="HydraBeauty2 la Clinica Darie" />
           </div>
         </div>
       </Section>
