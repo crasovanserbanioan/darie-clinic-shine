@@ -35,14 +35,14 @@ export type SiteImageKey =
   | "aparatClinica";
 
 export const siteImages: Record<SiteImageKey, string | null> = {
-  logo: null,
+  logo: logoAsset.url,
   interiorClinica: null,
   scaunClinica: null,
   cladireClinica: null,
-  drOvidiuDarie: null,
-  drFlorinaHalmagy: null,
-  drLorenaCimponerescu: null,
-  drVladPopescu: null,
+  drOvidiuDarie: ovidiuAsset.url,
+  drFlorinaHalmagy: florinaAsset.url,
+  drLorenaCimponerescu: lorenaAsset.url,
+  drVladPopescu: vladAsset.url,
   alunitaLupa: null,
   insemnareCreion: null,
   cusut: null,
