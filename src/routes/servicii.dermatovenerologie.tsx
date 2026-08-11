@@ -52,6 +52,12 @@ const items: SubService[] = [
       "Tratamentul venectaziilor și al varicelor superficiale prin injectarea unei soluții sclerozante, pentru picioare fără vase vizibile.",
     image: "injectieCirculatie",
   },
+  {
+    title: "Laser CO2",
+    description:
+      "Laser CO2 fracționat pentru remodelarea pielii: îndepărtarea leziunilor benigne, atenuarea cicatricilor și a ridurilor fine, cu recuperare rapidă.",
+    image: "laserCO2",
+  },
 ];
 
 function Page() {
