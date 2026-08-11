@@ -95,9 +95,6 @@ function Index() {
                 <CardContent className="p-7">
                   <Stethoscope className="size-6 text-primary" aria-hidden />
                   <h3 className="mt-4 text-xl">{service.label}</h3>
-                  <span className="mt-4 inline-block text-sm font-medium text-primary">
-                    Află mai multe
-                  </span>
                 </CardContent>
               </Card>
             </Link>
