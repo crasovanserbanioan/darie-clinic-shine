@@ -39,14 +39,16 @@ export function Flipbook({ pages }: { pages: FlipPage[] }) {
 
   if (isNarrow) {
     const page = pages[mobileIndex];
+    if (!page) return null;
     return (
       <div className="mx-auto w-full max-w-md">
         <div
           className="overflow-hidden rounded-xl border border-border bg-card shadow-lift"
-          onTouchStart={(e) => (touchStart.current = e.touches[0].clientX)}
+          onTouchStart={(e) => (touchStart.current = e.touches[0]?.clientX ?? null)}
           onTouchEnd={(e) => {
             if (touchStart.current === null) return;
-            const dx = e.changedTouches[0].clientX - touchStart.current;
+            const endX = e.changedTouches[0]?.clientX ?? touchStart.current;
+            const dx = endX - touchStart.current;
             if (dx < -40) next();
             if (dx > 40) prev();
             touchStart.current = null;
