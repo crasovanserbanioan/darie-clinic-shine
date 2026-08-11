@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as EchipaRouteImport } from './routes/echipa'
+import { Route as TarifeServiciiRouteImport } from './routes/tarife-servicii'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -28,35 +29,44 @@ const EchipaRoute = EchipaRouteImport.update({
   path: '/echipa',
   getParentRoute: () => rootRouteImport,
 } as any)
+const TarifeServiciiRoute = TarifeServiciiRouteImport.update({
+  id: '/tarife-servicii',
+  path: '/tarife-servicii',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
   '/echipa': typeof EchipaRoute
+  '/tarife-servicii': typeof TarifeServiciiRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
   '/echipa': typeof EchipaRoute
+  '/tarife-servicii': typeof TarifeServiciiRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
   '/echipa': typeof EchipaRoute
+  '/tarife-servicii': typeof TarifeServiciiRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/contact' | '/echipa'
+  fullPaths: '/' | '/contact' | '/echipa' | '/tarife-servicii'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/contact' | '/echipa'
-  id: '__root__' | '/' | '/contact' | '/echipa'
+  to: '/' | '/contact' | '/echipa' | '/tarife-servicii'
+  id: '__root__' | '/' | '/contact' | '/echipa' | '/tarife-servicii'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ContactRoute: typeof ContactRoute
   EchipaRoute: typeof EchipaRoute
+  TarifeServiciiRoute: typeof TarifeServiciiRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -82,6 +92,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof EchipaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/tarife-servicii': {
+      id: '/tarife-servicii'
+      path: '/tarife-servicii'
+      fullPath: '/tarife-servicii'
+      preLoaderRoute: typeof TarifeServiciiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -89,17 +106,8 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ContactRoute: ContactRoute,
   EchipaRoute: EchipaRoute,
+  TarifeServiciiRoute: TarifeServiciiRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
