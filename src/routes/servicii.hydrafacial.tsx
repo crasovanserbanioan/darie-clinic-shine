@@ -63,6 +63,19 @@ function Page() {
       />
 
       <Section>
+        <div className="overflow-hidden rounded-2xl border border-border shadow-soft">
+          <SiteImage
+            name="hydraBeautyAparat"
+            alt="Sistemul HydraBeauty 2 — Advanced Skin Care System"
+            loading="eager"
+            imgClassName="w-full object-contain"
+            className="aspect-[16/9] bg-muted"
+          />
+        </div>
+      </Section>
+
+      <Section>
+
         <div className="grid items-center gap-10 lg:grid-cols-2">
           <div className="min-w-0">
             <h2 className="text-3xl">Un singur tratament, cinci acțiuni</h2>
