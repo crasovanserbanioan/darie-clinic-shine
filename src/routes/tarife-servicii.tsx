@@ -47,7 +47,7 @@ const pages: FlipPage[] = [
   p11,
   p12,
 
-].map((asset, i) => ({ src: asset.url, alt: `Lista de prețuri Clinica Darie — pagina ${i + 1}` }));
+].map((asset, i) => ({ src: asset, alt: `Lista de prețuri Clinica Darie — pagina ${i + 1}` }));
 
 function TarifePage() {
   return (

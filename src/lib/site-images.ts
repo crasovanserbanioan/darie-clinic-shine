@@ -39,7 +39,7 @@ import aparatClinicaAsset from "@/assets/Aparat.jpg";
  *
  * Fiecare intrare este `null` până la încărcarea fotografiei reale.
  * Pentru a activa o imagine: încarcă fișierul ca asset și înlocuiește `null`
- * cu URL-ul acestuia (ex: `import x from "@/assets/Logo.jpg.asset.json"` -> `x.url`).
+ * cu URL-ul acestuia (ex: `import x from "@/assets/Logo.jpg"`).
  */
 export type SiteImageKey =
   | "logo"
