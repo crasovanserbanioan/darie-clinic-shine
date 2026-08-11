@@ -13,7 +13,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Clinica Darie: consultații dermatovenerologie, chirurgie dermatologică, estetică medicală, Hydrafacial și epilare definitivă în Dumbrăvița, Timiș.",
+          "Clinica Darie: consultații dermatovenerologie, chirurgie dermatologică, estetică medicală, HydraBeauty2 și epilare definitivă în Dumbrăvița, Timiș.",
       },
       { property: "og:title", content: "Clinica Darie — Dermatologie în Dumbrăvița" },
       {
