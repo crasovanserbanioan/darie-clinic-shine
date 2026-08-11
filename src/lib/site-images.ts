@@ -25,6 +25,11 @@ import fireAsset from "@/assets/Firebioresorbabile.jpg.asset.json";
 import peelingChimicAsset from "@/assets/PeelingChimic.jpg.asset.json";
 import pbSerumAsset from "@/assets/pbserum.jpg.asset.json";
 import prxAsset from "@/assets/Peelingprx.jpg.asset.json";
+import epilareAparatAsset from "@/assets/epilaredefinitiva1.png.asset.json";
+import epilareSpotAsset from "@/assets/epilaredefinitiva2.webp.asset.json";
+import epilareCoherentAsset from "@/assets/epilaredefinitiva3.webp.asset.json";
+import epilareWaveAsset from "@/assets/epilaredefinitiva4.png.asset.json";
+import epilareRezultateAsset from "@/assets/epilaredefinitiva5.webp.asset.json";
 
 /**
  * Imaginile foto ale clinicii.
@@ -65,7 +70,12 @@ export type SiteImageKey =
   | "laserCO2"
   | "dermapen4"
   | "peelingCosmelan"
-  | "mezoterapie";
+  | "mezoterapie"
+  | "epilareAparat"
+  | "epilareSpot"
+  | "epilareCoherent"
+  | "epilareWave"
+  | "epilareRezultate";
 
 export const siteImages: Record<SiteImageKey, string | null> = {
   logo: logoAsset.url,
@@ -100,4 +110,9 @@ export const siteImages: Record<SiteImageKey, string | null> = {
   dermapen4: dermapenAsset.url,
   peelingCosmelan: cosmelanAsset.url,
   mezoterapie: mezoterapieAsset.url,
+  epilareAparat: epilareAparatAsset.url,
+  epilareSpot: epilareSpotAsset.url,
+  epilareCoherent: epilareCoherentAsset.url,
+  epilareWave: epilareWaveAsset.url,
+  epilareRezultate: epilareRezultateAsset.url,
 };
