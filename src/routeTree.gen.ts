@@ -17,6 +17,7 @@ import { Route as ServiciiChirurgieDermatologicaRouteImport } from './routes/ser
 import { Route as ServiciiDermatovenerologieRouteImport } from './routes/servicii.dermatovenerologie'
 import { Route as ServiciiEpilareDefinitivaRouteImport } from './routes/servicii.epilare-definitiva'
 import { Route as ServiciiEsteticaDermatologicaRouteImport } from './routes/servicii.estetica-dermatologica'
+import { Route as ServiciiExionRouteImport } from './routes/servicii.exion'
 import { Route as ServiciiHydrafacialRouteImport } from './routes/servicii.hydrafacial'
 
 const IndexRoute = IndexRouteImport.update({
@@ -63,6 +64,11 @@ const ServiciiEsteticaDermatologicaRoute =
     path: '/servicii/estetica-dermatologica',
     getParentRoute: () => rootRouteImport,
   } as any)
+const ServiciiExionRoute = ServiciiExionRouteImport.update({
+  id: '/servicii/exion',
+  path: '/servicii/exion',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ServiciiHydrafacialRoute = ServiciiHydrafacialRouteImport.update({
   id: '/servicii/hydrafacial',
   path: '/servicii/hydrafacial',
@@ -78,6 +84,7 @@ export interface FileRoutesByFullPath {
   '/servicii/dermatovenerologie': typeof ServiciiDermatovenerologieRoute
   '/servicii/epilare-definitiva': typeof ServiciiEpilareDefinitivaRoute
   '/servicii/estetica-dermatologica': typeof ServiciiEsteticaDermatologicaRoute
+  '/servicii/exion': typeof ServiciiExionRoute
   '/servicii/hydrafacial': typeof ServiciiHydrafacialRoute
 }
 export interface FileRoutesByTo {
@@ -89,6 +96,7 @@ export interface FileRoutesByTo {
   '/servicii/dermatovenerologie': typeof ServiciiDermatovenerologieRoute
   '/servicii/epilare-definitiva': typeof ServiciiEpilareDefinitivaRoute
   '/servicii/estetica-dermatologica': typeof ServiciiEsteticaDermatologicaRoute
+  '/servicii/exion': typeof ServiciiExionRoute
   '/servicii/hydrafacial': typeof ServiciiHydrafacialRoute
 }
 export interface FileRoutesById {
@@ -101,6 +109,7 @@ export interface FileRoutesById {
   '/servicii/dermatovenerologie': typeof ServiciiDermatovenerologieRoute
   '/servicii/epilare-definitiva': typeof ServiciiEpilareDefinitivaRoute
   '/servicii/estetica-dermatologica': typeof ServiciiEsteticaDermatologicaRoute
+  '/servicii/exion': typeof ServiciiExionRoute
   '/servicii/hydrafacial': typeof ServiciiHydrafacialRoute
 }
 export interface FileRouteTypes {
@@ -114,6 +123,7 @@ export interface FileRouteTypes {
     | '/servicii/dermatovenerologie'
     | '/servicii/epilare-definitiva'
     | '/servicii/estetica-dermatologica'
+    | '/servicii/exion'
     | '/servicii/hydrafacial'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -125,6 +135,7 @@ export interface FileRouteTypes {
     | '/servicii/dermatovenerologie'
     | '/servicii/epilare-definitiva'
     | '/servicii/estetica-dermatologica'
+    | '/servicii/exion'
     | '/servicii/hydrafacial'
   id:
     | '__root__'
@@ -136,6 +147,7 @@ export interface FileRouteTypes {
     | '/servicii/dermatovenerologie'
     | '/servicii/epilare-definitiva'
     | '/servicii/estetica-dermatologica'
+    | '/servicii/exion'
     | '/servicii/hydrafacial'
   fileRoutesById: FileRoutesById
 }
@@ -148,6 +160,7 @@ export interface RootRouteChildren {
   ServiciiDermatovenerologieRoute: typeof ServiciiDermatovenerologieRoute
   ServiciiEpilareDefinitivaRoute: typeof ServiciiEpilareDefinitivaRoute
   ServiciiEsteticaDermatologicaRoute: typeof ServiciiEsteticaDermatologicaRoute
+  ServiciiExionRoute: typeof ServiciiExionRoute
   ServiciiHydrafacialRoute: typeof ServiciiHydrafacialRoute
 }
 
@@ -209,6 +222,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServiciiEsteticaDermatologicaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/servicii/exion': {
+      id: '/servicii/exion'
+      path: '/servicii/exion'
+      fullPath: '/servicii/exion'
+      preLoaderRoute: typeof ServiciiExionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/servicii/hydrafacial': {
       id: '/servicii/hydrafacial'
       path: '/servicii/hydrafacial'
@@ -228,6 +248,7 @@ const rootRouteChildren: RootRouteChildren = {
   ServiciiDermatovenerologieRoute: ServiciiDermatovenerologieRoute,
   ServiciiEpilareDefinitivaRoute: ServiciiEpilareDefinitivaRoute,
   ServiciiEsteticaDermatologicaRoute: ServiciiEsteticaDermatologicaRoute,
+  ServiciiExionRoute: ServiciiExionRoute,
   ServiciiHydrafacialRoute: ServiciiHydrafacialRoute,
 }
 export const routeTree = rootRouteImport
