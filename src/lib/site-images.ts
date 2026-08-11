@@ -79,9 +79,9 @@ export type SiteImageKey =
 
 export const siteImages: Record<SiteImageKey, string | null> = {
   logo: logoAsset.url,
-  interiorClinica: null,
-  scaunClinica: null,
-  cladireClinica: null,
+  interiorClinica: interiorAsset.url,
+  scaunClinica: interiorAsset.url,
+  cladireClinica: cladireAsset.url,
   drOvidiuDarie: ovidiuAsset.url,
   drFlorinaHalmagy: florinaAsset.url,
   drLorenaCimponerescu: lorenaAsset.url,
