@@ -46,7 +46,7 @@ function Index() {
               Oferim întreaga expertiză dermatologică și estetică
             </h1>
             <p className="mt-6 max-w-xl text-base text-primary-foreground/85 sm:text-lg">
-              Dermatologie medicală, chirurgie dermatologică și estetică avansată, într-o clinică
+              Dermatologie medicală, chirurgie dermatologică și estetică, într-o clinică
               gândită pentru confortul pacientului.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
