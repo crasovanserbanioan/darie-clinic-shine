@@ -60,8 +60,8 @@ function Index() {
           </div>
           <div className="aspect-[4/3] overflow-hidden rounded-3xl border border-primary-foreground/15 shadow-lift">
             <SiteImage
-              name="interiorClinica"
-              alt="Interiorul Clinicii Darie"
+              name="cladireClinica"
+              alt="Clădirea Clinicii Darie din Dumbrăvița"
               loading="eager"
             />
           </div>
@@ -109,17 +109,40 @@ function Index() {
       <Section tone="muted">
         <div className="grid items-center gap-10 lg:grid-cols-2">
           <div className="aspect-[4/3] overflow-hidden rounded-2xl border border-border shadow-soft">
-            <SiteImage name="cladireClinica" alt="Clădirea Clinicii Darie" />
+            <SiteImage name="interiorClinica" alt="Interiorul Clinicii Darie" />
           </div>
           <div className="min-w-0">
-            <h2 className="text-3xl sm:text-4xl">Ușor de găsit, ușor de vizitat</h2>
+            <h2 className="text-3xl sm:text-4xl">Un spațiu gândit pentru confortul dumneavoastră</h2>
             <p className="mt-4 text-muted-foreground">
-              Ne găsiți pe {CLINIC.address}, la câteva minute de Timișoara. Programările se fac
-              telefonic, în intervalul {CLINIC.schedule.toLowerCase()}.
+              Interior liniștit, luminos și impecabil igienizat, unde fiecare consultație se
+              desfășoară fără grabă. Ne găsiți pe {CLINIC.address}, la câteva minute de Timișoara,
+              iar programările se fac telefonic în intervalul {CLINIC.schedule.toLowerCase()}.
             </p>
             <Button asChild className="mt-6">
               <Link to="/tarife-servicii">Vezi lista de prețuri</Link>
             </Button>
+          </div>
+        </div>
+      </Section>
+
+      <Section>
+        <div className="grid items-center gap-10 lg:grid-cols-2">
+          <div className="order-2 min-w-0 lg:order-1">
+            <h2 className="text-3xl sm:text-4xl">Tehnologie medicală de ultimă generație</h2>
+            <p className="mt-4 text-muted-foreground">
+              Investim constant în aparatură certificată — laser CO2 fracționat, laser diodă pentru
+              epilare definitivă și sisteme avansate de îngrijire a pielii — pentru rezultate
+              precise, sigure și cu perioadă minimă de recuperare.
+            </p>
+            <Button asChild variant="outline" className="mt-6">
+              <a href={CLINIC.phonePrimaryHref}>
+                <Phone className="size-4" aria-hidden />
+                Sună Acum
+              </a>
+            </Button>
+          </div>
+          <div className="order-1 aspect-[4/5] overflow-hidden rounded-2xl border border-border shadow-soft lg:order-2">
+            <SiteImage name="aparatClinica" alt="Aparatură medicală laser din Clinica Darie" />
           </div>
         </div>
       </Section>

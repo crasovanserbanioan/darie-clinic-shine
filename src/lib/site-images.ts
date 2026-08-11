@@ -30,6 +30,9 @@ import epilareSpotAsset from "@/assets/epilaredefinitiva2.webp.asset.json";
 import epilareCoherentAsset from "@/assets/epilaredefinitiva3.webp.asset.json";
 import epilareWaveAsset from "@/assets/epilaredefinitiva4.png.asset.json";
 import epilareRezultateAsset from "@/assets/epilaredefinitiva5.jpg.asset.json";
+import cladireAsset from "@/assets/CladireClinica.jpg.asset.json";
+import interiorAsset from "@/assets/InteriorClinica.jpg.asset.json";
+import aparatClinicaAsset from "@/assets/Aparat.jpg.asset.json";
 
 /**
  * Imaginile foto ale clinicii.
@@ -79,9 +82,9 @@ export type SiteImageKey =
 
 export const siteImages: Record<SiteImageKey, string | null> = {
   logo: logoAsset.url,
-  interiorClinica: null,
-  scaunClinica: null,
-  cladireClinica: null,
+  interiorClinica: interiorAsset.url,
+  scaunClinica: interiorAsset.url,
+  cladireClinica: cladireAsset.url,
   drOvidiuDarie: ovidiuAsset.url,
   drFlorinaHalmagy: florinaAsset.url,
   drLorenaCimponerescu: lorenaAsset.url,
@@ -105,7 +108,7 @@ export const siteImages: Record<SiteImageKey, string | null> = {
   hydraBeautyAparat: hydraAparatAsset.url,
   aparatFata: prxAsset.url,
   aparat: null,
-  aparatClinica: null,
+  aparatClinica: aparatClinicaAsset.url,
   laserCO2: co2Asset.url,
   dermapen4: dermapenAsset.url,
   peelingCosmelan: cosmelanAsset.url,
