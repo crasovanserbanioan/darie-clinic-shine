@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { ChevronDown, Menu, Phone, X } from "lucide-react";
+import { ChevronDown, Facebook, Instagram, Menu, MessageCircle, Phone, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
