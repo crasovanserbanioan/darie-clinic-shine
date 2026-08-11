@@ -20,6 +20,9 @@ import prpAsset from "@/assets/prpterapiavampir.jpg.asset.json";
 import sculptraAsset from "@/assets/SculptraAcidPoli.jpg.asset.json";
 import botoxAsset from "@/assets/toxinabotulinica.jpg.asset.json";
 import fireAsset from "@/assets/Firebioresorbabile.jpg.asset.json";
+import peelingChimicAsset from "@/assets/PeelingChimic.jpg.asset.json";
+import pbSerumAsset from "@/assets/pbserum.jpg.asset.json";
+import prxAsset from "@/assets/Peelingprx.jpg.asset.json";
 
 /**
  * Imaginile foto ale clinicii.
@@ -78,15 +81,15 @@ export const siteImages: Record<SiteImageKey, string | null> = {
   injectieBuze: acidHialuronicAsset.url,
   injectiePometi: fireAsset.url,
   reclamaHarmony: harmonyCaAsset.url,
-  harmonyCaCutie: null,
+  harmonyCaCutie: pbSerumAsset.url,
   sculptraAcidPoli: sculptraAsset.url,
   injectieCap: prpAsset.url,
   injectieCirculatie: scleroAsset.url,
-  pensulaCrema: cosmelanAsset.url,
+  pensulaCrema: peelingChimicAsset.url,
   aparatRosacee: electroAsset.url,
   alunitaMana: chiuretareAsset.url,
   hydraBeauty: null,
-  aparatFata: null,
+  aparatFata: prxAsset.url,
   aparat: null,
   aparatClinica: null,
   laserCO2: co2Asset.url,
