@@ -29,7 +29,7 @@ import epilareAparatAsset from "@/assets/epilaredefinitiva1.png.asset.json";
 import epilareSpotAsset from "@/assets/epilaredefinitiva2.webp.asset.json";
 import epilareCoherentAsset from "@/assets/epilaredefinitiva3.webp.asset.json";
 import epilareWaveAsset from "@/assets/epilaredefinitiva4.png.asset.json";
-import epilareRezultateAsset from "@/assets/epilaredefinitiva5.webp.asset.json";
+import epilareRezultateAsset from "@/assets/epilaredefinitiva5.jpg.asset.json";
 
 /**
  * Imaginile foto ale clinicii.
