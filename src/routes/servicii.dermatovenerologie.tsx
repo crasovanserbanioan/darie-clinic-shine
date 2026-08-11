@@ -46,6 +46,12 @@ const items: SubService[] = [
       "Tratarea verucilor, papiloamelor și a altor formațiuni benigne prin curent de înaltă frecvență.",
     image: "aparatRosacee",
   },
+  {
+    title: "Scleroterapie",
+    description:
+      "Tratamentul venectaziilor și al varicelor superficiale prin injectarea unei soluții sclerozante, pentru picioare fără vase vizibile.",
+    image: "injectieCirculatie",
+  },
 ];
 
 function Page() {

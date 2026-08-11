@@ -13,7 +13,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Clinica Darie: consultații dermatovenerologie, chirurgie dermatologică, estetică medicală, Hydrafacial, epilare definitivă și EXION în Dumbrăvița, Timiș.",
+          "Clinica Darie: consultații dermatovenerologie, chirurgie dermatologică, estetică medicală, Hydrafacial și epilare definitivă în Dumbrăvița, Timiș.",
       },
       { property: "og:title", content: "Clinica Darie — Dermatologie în Dumbrăvița" },
       {
@@ -43,7 +43,7 @@ function Index() {
               Dumbrăvița · Timiș
             </p>
             <h1 className="mt-4 text-4xl leading-[1.05] sm:text-5xl lg:text-6xl">
-              Grija pentru pielea dumneavoastră, de la diagnostic la rezultat
+              Oferim întreaga expertiză dermatologică și estetică
             </h1>
             <p className="mt-6 max-w-xl text-base text-primary-foreground/85 sm:text-lg">
               Dermatologie medicală, chirurgie dermatologică și estetică avansată, într-o clinică
@@ -53,7 +53,7 @@ function Index() {
               <Button asChild size="lg" variant="secondary">
                 <a href={CLINIC.phonePrimaryHref}>
                   <Phone className="size-4" aria-hidden />
-                  Programează-te Online
+                  Sună Acum
                 </a>
               </Button>
             </div>

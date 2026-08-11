@@ -91,7 +91,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         property: "og:description",
         content:
-          "Consultații dermatologice, chirurgie, estetică medicală, Hydrafacial, epilare definitivă și EXION.",
+          "Consultații dermatologice, chirurgie, estetică medicală, Hydrafacial și epilare definitivă.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

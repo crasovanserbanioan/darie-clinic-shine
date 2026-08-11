@@ -23,7 +23,7 @@ export const Route = createFileRoute("/tarife-servicii")({
       {
         name: "description",
         content:
-          "Răsfoiți lista completă de prețuri a Clinicii Darie: consultații dermatologice, chirurgie, estetică, Hydrafacial, epilare definitivă și Exion.",
+          "Răsfoiți lista completă de prețuri a Clinicii Darie: consultații dermatologice, chirurgie, estetică, Hydrafacial și epilare definitivă.",
       },
       { property: "og:title", content: "Tarife servicii — Clinica Darie" },
       {

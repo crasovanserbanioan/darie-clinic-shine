@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { ChevronDown, Menu, Phone, X } from "lucide-react";
+import { ChevronDown, Facebook, Instagram, Menu, MessageCircle, Phone, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -63,12 +63,32 @@ export function Header() {
             </Link>
           </nav>
 
+          <div className="flex items-center gap-1">
+            {[
+              { href: CLINIC.instagram, icon: Instagram, label: "Instagram Clinica Darie" },
+              { href: CLINIC.facebook, icon: Facebook, label: "Facebook Clinica Darie" },
+              { href: CLINIC.whatsapp, icon: MessageCircle, label: "WhatsApp +40 749 036 864" },
+            ].map((s) => (
+              <a
+                key={s.label}
+                href={s.href}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={s.label}
+                className="inline-flex size-9 items-center justify-center rounded-full text-foreground/70 transition-colors hover:bg-accent hover:text-accent-foreground"
+              >
+                <s.icon className="size-5" aria-hidden />
+              </a>
+            ))}
+          </div>
+
           <Button asChild size="sm" className="hidden sm:inline-flex">
             <a href={CLINIC.phonePrimaryHref}>
               <Phone className="size-4" aria-hidden />
-              Programează-te Online
+              Sună Acum
             </a>
           </Button>
+
 
           <button
             type="button"
@@ -112,7 +132,7 @@ export function Header() {
             <Button asChild className="mt-3">
               <a href={CLINIC.phonePrimaryHref}>
                 <Phone className="size-4" aria-hidden />
-                Programează-te Online
+                Sună Acum
               </a>
             </Button>
           </nav>

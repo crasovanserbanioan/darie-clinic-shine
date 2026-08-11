@@ -23,7 +23,7 @@ export const Route = createFileRoute("/echipa")({
   component: EchipaPage,
 });
 
-const team: { name: string; role: string; image: SiteImageKey }[] = [
+const team: { name: string; role: string; note?: string; image: SiteImageKey }[] = [
   {
     name: "Dr. Ovidiu Darie",
     role: "Medic Primar Dermato-Venerologie",
@@ -32,6 +32,7 @@ const team: { name: string; role: string; image: SiteImageKey }[] = [
   {
     name: "Dr. Florina Halmagy",
     role: "Medic Specialist Dermato-Venerologie",
+    note: "Consultații decontate de CNAS",
     image: "drFlorinaHalmagy",
   },
   {
@@ -67,6 +68,11 @@ function EchipaPage() {
               <CardContent className="p-6">
                 <h2 className="text-lg">{member.name}</h2>
                 <p className="mt-1 text-sm text-muted-foreground">{member.role}</p>
+                {member.note && (
+                  <p className="mt-3 inline-flex rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
+                    {member.note}
+                  </p>
+                )}
               </CardContent>
             </Card>
           ))}
