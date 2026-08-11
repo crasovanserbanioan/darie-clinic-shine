@@ -44,7 +44,8 @@ export type SiteImageKey =
   | "hydraBeauty"
   | "aparatFata"
   | "aparat"
-  | "aparatClinica";
+  | "aparatClinica"
+  | "laserCO2";
 
 export const siteImages: Record<SiteImageKey, string | null> = {
   logo: logoAsset.url,
@@ -55,8 +56,8 @@ export const siteImages: Record<SiteImageKey, string | null> = {
   drFlorinaHalmagy: florinaAsset.url,
   drLorenaCimponerescu: lorenaAsset.url,
   drVladPopescu: vladAsset.url,
-  alunitaLupa: null,
-  insemnareCreion: null,
+  alunitaLupa: consultatiiAsset.url,
+  insemnareCreion: dermatoscopieAsset.url,
   cusut: null,
   extragereAlunita: null,
   riduriInjectie: null,
@@ -66,12 +67,13 @@ export const siteImages: Record<SiteImageKey, string | null> = {
   harmonyCaCutie: null,
   sculptraAcidPoli: null,
   injectieCap: null,
-  injectieCirculatie: null,
+  injectieCirculatie: scleroAsset.url,
   pensulaCrema: null,
-  aparatRosacee: null,
-  alunitaMana: null,
+  aparatRosacee: electroAsset.url,
+  alunitaMana: chiuretareAsset.url,
   hydraBeauty: null,
   aparatFata: null,
   aparat: null,
   aparatClinica: null,
+  laserCO2: co2Asset.url,
 };
