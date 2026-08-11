@@ -26,7 +26,7 @@ const items: SubService[] = [
     title: "Dermapen 4",
     description:
       "Microneedling de ultimă generație pentru textură uniformă, pori vizibil mai mici și cicatrici estompate.",
-    image: "pensulaCrema",
+    image: "dermapen4",
   },
   {
     title: "PRP (Terapia Vampir)",
@@ -38,13 +38,13 @@ const items: SubService[] = [
     title: "Peeling Cosmelan",
     description:
       "Protocol depigmentant intensiv, indicat în melasmă și hiperpigmentări rezistente la alte tratamente.",
-    image: "pensulaCrema",
+    image: "peelingCosmelan",
   },
   {
     title: "Mezoterapie",
     description:
       "Microinjectări cu vitamine și acid hialuronic nereticulat pentru hidratare profundă și luminozitate.",
-    image: "injectieCirculatie",
+    image: "mezoterapie",
   },
   {
     title: "Peeling chimic",
@@ -80,7 +80,7 @@ const items: SubService[] = [
     title: "PB Serum",
     description:
       "Enzime recombinate care remodelează țesutul, reduc fibroza și îmbunătățesc aspectul pielii.",
-    image: "harmonyCaCutie",
+    image: "injectiePometi",
   },
   {
     title: "Fire bioresorbabile",
