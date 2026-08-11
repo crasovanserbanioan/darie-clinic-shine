@@ -60,8 +60,8 @@ function Index() {
           </div>
           <div className="aspect-[4/3] overflow-hidden rounded-3xl border border-primary-foreground/15 shadow-lift">
             <SiteImage
-              name="interiorClinica"
-              alt="Interiorul Clinicii Darie"
+              name="cladireClinica"
+              alt="Clădirea Clinicii Darie din Dumbrăvița"
               loading="eager"
             />
           </div>
