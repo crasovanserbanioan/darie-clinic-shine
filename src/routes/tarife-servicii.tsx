@@ -1,18 +1,18 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero, PageShell, Section } from "@/components/page-shell";
 import { Flipbook, type FlipPage } from "@/components/flipbook";
-import p1 from "@/assets/brochure2/preturi1.webp.asset.json";
-import p2 from "@/assets/brochure2/preturi2.webp.asset.json";
-import p3 from "@/assets/brochure2/preturi3.webp.asset.json";
-import p4 from "@/assets/brochure2/preturi4.webp.asset.json";
-import p5 from "@/assets/brochure2/preturi5.webp.asset.json";
-import p6 from "@/assets/brochure2/preturi6.webp.asset.json";
-import p7 from "@/assets/brochure2/preturi7.webp.asset.json";
-import p8 from "@/assets/brochure2/preturi8.webp.asset.json";
-import p9 from "@/assets/brochure2/preturi9.webp.asset.json";
-import p10 from "@/assets/brochure2/preturi10.webp.asset.json";
-import p11 from "@/assets/brochure2/preturi11.png.asset.json";
-import p12 from "@/assets/brochure2/preturi12.png.asset.json";
+import p1 from "@/assets/brochure2/preturi1.webp";
+import p2 from "@/assets/brochure2/preturi2.webp";
+import p3 from "@/assets/brochure2/preturi3.webp";
+import p4 from "@/assets/brochure2/preturi4.webp";
+import p5 from "@/assets/brochure2/preturi5.webp";
+import p6 from "@/assets/brochure2/preturi6.webp";
+import p7 from "@/assets/brochure2/preturi7.webp";
+import p8 from "@/assets/brochure2/preturi8.webp";
+import p9 from "@/assets/brochure2/preturi9.webp";
+import p10 from "@/assets/brochure2/preturi10.webp";
+import p11 from "@/assets/brochure2/preturi11.webp";
+import p12 from "@/assets/brochure2/preturi12.webp";
 
 export const Route = createFileRoute("/tarife-servicii")({
   head: () => ({
