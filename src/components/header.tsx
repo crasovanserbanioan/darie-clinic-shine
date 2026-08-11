@@ -132,7 +132,7 @@ export function Header() {
             <Button asChild className="mt-3">
               <a href={CLINIC.phonePrimaryHref}>
                 <Phone className="size-4" aria-hidden />
-                Programează-te Online
+                Sună Acum
               </a>
             </Button>
           </nav>
