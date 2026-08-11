@@ -17,7 +17,7 @@ import harmonyCaAsset from "@/assets/HarmonyCa.jpg.asset.json";
 import mezoterapieAsset from "@/assets/mezoterapie.jpg.asset.json";
 import cosmelanAsset from "@/assets/peelingcosmelan.jpg.asset.json";
 import prpAsset from "@/assets/prpterapiavampir.jpg.asset.json";
-import sculptraAsset from "@/assets/SculptraAcidPoli.jpg.asset.json";
+import sculptraAsset from "@/assets/SculptraAcidPoli-2.jpg.asset.json";
 import botoxAsset from "@/assets/toxinabotulinica.jpg.asset.json";
 import hydraAparatAsset from "@/assets/hydrabeauty-aparat.jpg.asset.json";
 import hydraTratamentAsset from "@/assets/hydrabeauty-tratament.jpg.asset.json";
