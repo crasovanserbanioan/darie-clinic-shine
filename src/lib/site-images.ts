@@ -1,45 +1,45 @@
-import logoAsset from "@/assets/logo-icon.png.asset.json";
-import ovidiuAsset from "@/assets/dr-ovidiu-darie.jpg.asset.json";
-import florinaAsset from "@/assets/dr-florina-halmagy.jpg.asset.json";
-import lorenaAsset from "@/assets/dr-lorena-cimponerescu.jpg.asset.json";
-import vladAsset from "@/assets/dr-vlad-popescu.jpg.asset.json";
-import consultatiiAsset from "@/assets/consultatiidermatovenerologie.jpg.asset.json";
-import dermatoscopieAsset from "@/assets/dermatoscopie.jpg.asset.json";
-import chiuretareAsset from "@/assets/chiuretare.jpg.asset.json";
-import electroAsset from "@/assets/electrocauterizare.jpg.asset.json";
-import scleroAsset from "@/assets/scleroterapie.jpg.asset.json";
-import co2Asset from "@/assets/CO2.jpg.asset.json";
-import chirurgieAsset from "@/assets/chirurgiedermatologica.jpg.asset.json";
-import biopsieAsset from "@/assets/biopsiacutanata.jpg.asset.json";
-import acidHialuronicAsset from "@/assets/acidhialuronic.jpg.asset.json";
-import dermapenAsset from "@/assets/dermapen4.jpg.asset.json";
-import harmonyCaAsset from "@/assets/HarmonyCa.jpg.asset.json";
-import mezoterapieAsset from "@/assets/mezoterapie.jpg.asset.json";
-import cosmelanAsset from "@/assets/peelingcosmelan.jpg.asset.json";
-import prpAsset from "@/assets/prpterapiavampir.jpg.asset.json";
-import sculptraAsset from "@/assets/SculptraAcidPoli-2.jpg.asset.json";
-import botoxAsset from "@/assets/toxinabotulinica.jpg.asset.json";
-import hydraAparatAsset from "@/assets/hydrabeauty-aparat.jpg.asset.json";
-import hydraTratamentAsset from "@/assets/hydrabeauty-tratament.jpg.asset.json";
-import fireAsset from "@/assets/Firebioresorbabile.jpg.asset.json";
-import peelingChimicAsset from "@/assets/PeelingChimic.jpg.asset.json";
-import pbSerumAsset from "@/assets/pbserum.jpg.asset.json";
-import prxAsset from "@/assets/Peelingprx.jpg.asset.json";
-import epilareAparatAsset from "@/assets/epilaredefinitiva1.png.asset.json";
-import epilareSpotAsset from "@/assets/epilaredefinitiva2.webp.asset.json";
-import epilareCoherentAsset from "@/assets/epilaredefinitiva3.webp.asset.json";
-import epilareWaveAsset from "@/assets/epilaredefinitiva4.png.asset.json";
-import epilareRezultateAsset from "@/assets/epilaredefinitiva5.jpg.asset.json";
-import cladireAsset from "@/assets/CladireClinica.jpg.asset.json";
-import interiorAsset from "@/assets/InteriorClinica.jpg.asset.json";
-import aparatClinicaAsset from "@/assets/Aparat.jpg.asset.json";
+import logoAsset from "@/assets/logo-icon.png";
+import ovidiuAsset from "@/assets/dr-ovidiu-darie.jpg";
+import florinaAsset from "@/assets/dr-florina-halmagy.jpg";
+import lorenaAsset from "@/assets/dr-lorena-cimponerescu.jpg";
+import vladAsset from "@/assets/dr-vlad-popescu.jpg";
+import consultatiiAsset from "@/assets/consultatiidermatovenerologie.jpg";
+import dermatoscopieAsset from "@/assets/dermatoscopie.jpg";
+import chiuretareAsset from "@/assets/chiuretare.jpg";
+import electroAsset from "@/assets/electrocauterizare.jpg";
+import scleroAsset from "@/assets/scleroterapie.jpg";
+import co2Asset from "@/assets/CO2.jpg";
+import chirurgieAsset from "@/assets/chirurgiedermatologica.jpg";
+import biopsieAsset from "@/assets/biopsiacutanata.jpg";
+import acidHialuronicAsset from "@/assets/acidhialuronic.jpg";
+import dermapenAsset from "@/assets/dermapen4.jpg";
+import harmonyCaAsset from "@/assets/HarmonyCa.jpg";
+import mezoterapieAsset from "@/assets/mezoterapie.jpg";
+import cosmelanAsset from "@/assets/peelingcosmelan.jpg";
+import prpAsset from "@/assets/prpterapiavampir.jpg";
+import sculptraAsset from "@/assets/SculptraAcidPoli-2.jpg";
+import botoxAsset from "@/assets/toxinabotulinica.jpg";
+import hydraAparatAsset from "@/assets/hydrabeauty-aparat.jpg";
+import hydraTratamentAsset from "@/assets/hydrabeauty-tratament.jpg";
+import fireAsset from "@/assets/Firebioresorbabile.jpg";
+import peelingChimicAsset from "@/assets/PeelingChimic.jpg";
+import pbSerumAsset from "@/assets/pbserum.jpg";
+import prxAsset from "@/assets/Peelingprx.jpg";
+import epilareAparatAsset from "@/assets/epilaredefinitiva1.png";
+import epilareSpotAsset from "@/assets/epilaredefinitiva2.webp";
+import epilareCoherentAsset from "@/assets/epilaredefinitiva3.webp";
+import epilareWaveAsset from "@/assets/epilaredefinitiva4.png";
+import epilareRezultateAsset from "@/assets/epilaredefinitiva5.jpg";
+import cladireAsset from "@/assets/CladireClinica.jpg";
+import interiorAsset from "@/assets/InteriorClinica.jpg";
+import aparatClinicaAsset from "@/assets/Aparat.jpg";
 
 /**
  * Imaginile foto ale clinicii.
  *
  * Fiecare intrare este `null` până la încărcarea fotografiei reale.
  * Pentru a activa o imagine: încarcă fișierul ca asset și înlocuiește `null`
- * cu URL-ul acestuia (ex: `import x from "@/assets/Logo.jpg.asset.json"` -> `x.url`).
+ * cu URL-ul acestuia (ex: `import x from "@/assets/Logo.jpg"`).
  */
 export type SiteImageKey =
   | "logo"
@@ -81,41 +81,41 @@ export type SiteImageKey =
   | "epilareRezultate";
 
 export const siteImages: Record<SiteImageKey, string | null> = {
-  logo: logoAsset.url,
-  interiorClinica: interiorAsset.url,
-  scaunClinica: interiorAsset.url,
-  cladireClinica: cladireAsset.url,
-  drOvidiuDarie: ovidiuAsset.url,
-  drFlorinaHalmagy: florinaAsset.url,
-  drLorenaCimponerescu: lorenaAsset.url,
-  drVladPopescu: vladAsset.url,
-  alunitaLupa: consultatiiAsset.url,
-  insemnareCreion: dermatoscopieAsset.url,
-  cusut: chirurgieAsset.url,
-  extragereAlunita: biopsieAsset.url,
-  riduriInjectie: botoxAsset.url,
-  injectieBuze: acidHialuronicAsset.url,
-  injectiePometi: fireAsset.url,
-  reclamaHarmony: harmonyCaAsset.url,
-  harmonyCaCutie: pbSerumAsset.url,
-  sculptraAcidPoli: sculptraAsset.url,
-  injectieCap: prpAsset.url,
-  injectieCirculatie: scleroAsset.url,
-  pensulaCrema: peelingChimicAsset.url,
-  aparatRosacee: electroAsset.url,
-  alunitaMana: chiuretareAsset.url,
-  hydraBeauty: hydraTratamentAsset.url,
-  hydraBeautyAparat: hydraAparatAsset.url,
-  aparatFata: prxAsset.url,
+  logo: logoAsset,
+  interiorClinica: interiorAsset,
+  scaunClinica: interiorAsset,
+  cladireClinica: cladireAsset,
+  drOvidiuDarie: ovidiuAsset,
+  drFlorinaHalmagy: florinaAsset,
+  drLorenaCimponerescu: lorenaAsset,
+  drVladPopescu: vladAsset,
+  alunitaLupa: consultatiiAsset,
+  insemnareCreion: dermatoscopieAsset,
+  cusut: chirurgieAsset,
+  extragereAlunita: biopsieAsset,
+  riduriInjectie: botoxAsset,
+  injectieBuze: acidHialuronicAsset,
+  injectiePometi: fireAsset,
+  reclamaHarmony: harmonyCaAsset,
+  harmonyCaCutie: pbSerumAsset,
+  sculptraAcidPoli: sculptraAsset,
+  injectieCap: prpAsset,
+  injectieCirculatie: scleroAsset,
+  pensulaCrema: peelingChimicAsset,
+  aparatRosacee: electroAsset,
+  alunitaMana: chiuretareAsset,
+  hydraBeauty: hydraTratamentAsset,
+  hydraBeautyAparat: hydraAparatAsset,
+  aparatFata: prxAsset,
   aparat: null,
-  aparatClinica: aparatClinicaAsset.url,
-  laserCO2: co2Asset.url,
-  dermapen4: dermapenAsset.url,
-  peelingCosmelan: cosmelanAsset.url,
-  mezoterapie: mezoterapieAsset.url,
-  epilareAparat: epilareAparatAsset.url,
-  epilareSpot: epilareSpotAsset.url,
-  epilareCoherent: epilareCoherentAsset.url,
-  epilareWave: epilareWaveAsset.url,
-  epilareRezultate: epilareRezultateAsset.url,
+  aparatClinica: aparatClinicaAsset,
+  laserCO2: co2Asset,
+  dermapen4: dermapenAsset,
+  peelingCosmelan: cosmelanAsset,
+  mezoterapie: mezoterapieAsset,
+  epilareAparat: epilareAparatAsset,
+  epilareSpot: epilareSpotAsset,
+  epilareCoherent: epilareCoherentAsset,
+  epilareWave: epilareWaveAsset,
+  epilareRezultate: epilareRezultateAsset,
 };
