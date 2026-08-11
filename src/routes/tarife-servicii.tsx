@@ -11,6 +11,8 @@ import p7 from "@/assets/brochure2/preturi7.webp.asset.json";
 import p8 from "@/assets/brochure2/preturi8.webp.asset.json";
 import p9 from "@/assets/brochure2/preturi9.webp.asset.json";
 import p10 from "@/assets/brochure2/preturi10.webp.asset.json";
+import p11 from "@/assets/brochure2/preturi11.png.asset.json";
+import p12 from "@/assets/brochure2/preturi12.png.asset.json";
 
 export const Route = createFileRoute("/tarife-servicii")({
   head: () => ({
