@@ -10,33 +10,158 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as EchipaRouteImport } from './routes/echipa'
+import { Route as TarifeServiciiRouteImport } from './routes/tarife-servicii'
+import { Route as ServiciiChirurgieDermatologicaRouteImport } from './routes/servicii.chirurgie-dermatologica'
+import { Route as ServiciiDermatovenerologieRouteImport } from './routes/servicii.dermatovenerologie'
+import { Route as ServiciiEpilareDefinitivaRouteImport } from './routes/servicii.epilare-definitiva'
+import { Route as ServiciiEsteticaDermatologicaRouteImport } from './routes/servicii.estetica-dermatologica'
+import { Route as ServiciiExionRouteImport } from './routes/servicii.exion'
+import { Route as ServiciiHydrafacialRouteImport } from './routes/servicii.hydrafacial'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EchipaRoute = EchipaRouteImport.update({
+  id: '/echipa',
+  path: '/echipa',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TarifeServiciiRoute = TarifeServiciiRouteImport.update({
+  id: '/tarife-servicii',
+  path: '/tarife-servicii',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServiciiChirurgieDermatologicaRoute =
+  ServiciiChirurgieDermatologicaRouteImport.update({
+    id: '/servicii/chirurgie-dermatologica',
+    path: '/servicii/chirurgie-dermatologica',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ServiciiDermatovenerologieRoute =
+  ServiciiDermatovenerologieRouteImport.update({
+    id: '/servicii/dermatovenerologie',
+    path: '/servicii/dermatovenerologie',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ServiciiEpilareDefinitivaRoute =
+  ServiciiEpilareDefinitivaRouteImport.update({
+    id: '/servicii/epilare-definitiva',
+    path: '/servicii/epilare-definitiva',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ServiciiEsteticaDermatologicaRoute =
+  ServiciiEsteticaDermatologicaRouteImport.update({
+    id: '/servicii/estetica-dermatologica',
+    path: '/servicii/estetica-dermatologica',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ServiciiExionRoute = ServiciiExionRouteImport.update({
+  id: '/servicii/exion',
+  path: '/servicii/exion',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServiciiHydrafacialRoute = ServiciiHydrafacialRouteImport.update({
+  id: '/servicii/hydrafacial',
+  path: '/servicii/hydrafacial',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/contact': typeof ContactRoute
+  '/echipa': typeof EchipaRoute
+  '/tarife-servicii': typeof TarifeServiciiRoute
+  '/servicii/chirurgie-dermatologica': typeof ServiciiChirurgieDermatologicaRoute
+  '/servicii/dermatovenerologie': typeof ServiciiDermatovenerologieRoute
+  '/servicii/epilare-definitiva': typeof ServiciiEpilareDefinitivaRoute
+  '/servicii/estetica-dermatologica': typeof ServiciiEsteticaDermatologicaRoute
+  '/servicii/exion': typeof ServiciiExionRoute
+  '/servicii/hydrafacial': typeof ServiciiHydrafacialRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/contact': typeof ContactRoute
+  '/echipa': typeof EchipaRoute
+  '/tarife-servicii': typeof TarifeServiciiRoute
+  '/servicii/chirurgie-dermatologica': typeof ServiciiChirurgieDermatologicaRoute
+  '/servicii/dermatovenerologie': typeof ServiciiDermatovenerologieRoute
+  '/servicii/epilare-definitiva': typeof ServiciiEpilareDefinitivaRoute
+  '/servicii/estetica-dermatologica': typeof ServiciiEsteticaDermatologicaRoute
+  '/servicii/exion': typeof ServiciiExionRoute
+  '/servicii/hydrafacial': typeof ServiciiHydrafacialRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/contact': typeof ContactRoute
+  '/echipa': typeof EchipaRoute
+  '/tarife-servicii': typeof TarifeServiciiRoute
+  '/servicii/chirurgie-dermatologica': typeof ServiciiChirurgieDermatologicaRoute
+  '/servicii/dermatovenerologie': typeof ServiciiDermatovenerologieRoute
+  '/servicii/epilare-definitiva': typeof ServiciiEpilareDefinitivaRoute
+  '/servicii/estetica-dermatologica': typeof ServiciiEsteticaDermatologicaRoute
+  '/servicii/exion': typeof ServiciiExionRoute
+  '/servicii/hydrafacial': typeof ServiciiHydrafacialRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/contact'
+    | '/echipa'
+    | '/tarife-servicii'
+    | '/servicii/chirurgie-dermatologica'
+    | '/servicii/dermatovenerologie'
+    | '/servicii/epilare-definitiva'
+    | '/servicii/estetica-dermatologica'
+    | '/servicii/exion'
+    | '/servicii/hydrafacial'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/contact'
+    | '/echipa'
+    | '/tarife-servicii'
+    | '/servicii/chirurgie-dermatologica'
+    | '/servicii/dermatovenerologie'
+    | '/servicii/epilare-definitiva'
+    | '/servicii/estetica-dermatologica'
+    | '/servicii/exion'
+    | '/servicii/hydrafacial'
+  id:
+    | '__root__'
+    | '/'
+    | '/contact'
+    | '/echipa'
+    | '/tarife-servicii'
+    | '/servicii/chirurgie-dermatologica'
+    | '/servicii/dermatovenerologie'
+    | '/servicii/epilare-definitiva'
+    | '/servicii/estetica-dermatologica'
+    | '/servicii/exion'
+    | '/servicii/hydrafacial'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ContactRoute: typeof ContactRoute
+  EchipaRoute: typeof EchipaRoute
+  TarifeServiciiRoute: typeof TarifeServiciiRoute
+  ServiciiChirurgieDermatologicaRoute: typeof ServiciiChirurgieDermatologicaRoute
+  ServiciiDermatovenerologieRoute: typeof ServiciiDermatovenerologieRoute
+  ServiciiEpilareDefinitivaRoute: typeof ServiciiEpilareDefinitivaRoute
+  ServiciiEsteticaDermatologicaRoute: typeof ServiciiEsteticaDermatologicaRoute
+  ServiciiExionRoute: typeof ServiciiExionRoute
+  ServiciiHydrafacialRoute: typeof ServiciiHydrafacialRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,22 +173,84 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/echipa': {
+      id: '/echipa'
+      path: '/echipa'
+      fullPath: '/echipa'
+      preLoaderRoute: typeof EchipaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tarife-servicii': {
+      id: '/tarife-servicii'
+      path: '/tarife-servicii'
+      fullPath: '/tarife-servicii'
+      preLoaderRoute: typeof TarifeServiciiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/servicii/chirurgie-dermatologica': {
+      id: '/servicii/chirurgie-dermatologica'
+      path: '/servicii/chirurgie-dermatologica'
+      fullPath: '/servicii/chirurgie-dermatologica'
+      preLoaderRoute: typeof ServiciiChirurgieDermatologicaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/servicii/dermatovenerologie': {
+      id: '/servicii/dermatovenerologie'
+      path: '/servicii/dermatovenerologie'
+      fullPath: '/servicii/dermatovenerologie'
+      preLoaderRoute: typeof ServiciiDermatovenerologieRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/servicii/epilare-definitiva': {
+      id: '/servicii/epilare-definitiva'
+      path: '/servicii/epilare-definitiva'
+      fullPath: '/servicii/epilare-definitiva'
+      preLoaderRoute: typeof ServiciiEpilareDefinitivaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/servicii/estetica-dermatologica': {
+      id: '/servicii/estetica-dermatologica'
+      path: '/servicii/estetica-dermatologica'
+      fullPath: '/servicii/estetica-dermatologica'
+      preLoaderRoute: typeof ServiciiEsteticaDermatologicaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/servicii/exion': {
+      id: '/servicii/exion'
+      path: '/servicii/exion'
+      fullPath: '/servicii/exion'
+      preLoaderRoute: typeof ServiciiExionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/servicii/hydrafacial': {
+      id: '/servicii/hydrafacial'
+      path: '/servicii/hydrafacial'
+      fullPath: '/servicii/hydrafacial'
+      preLoaderRoute: typeof ServiciiHydrafacialRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ContactRoute: ContactRoute,
+  EchipaRoute: EchipaRoute,
+  TarifeServiciiRoute: TarifeServiciiRoute,
+  ServiciiChirurgieDermatologicaRoute: ServiciiChirurgieDermatologicaRoute,
+  ServiciiDermatovenerologieRoute: ServiciiDermatovenerologieRoute,
+  ServiciiEpilareDefinitivaRoute: ServiciiEpilareDefinitivaRoute,
+  ServiciiEsteticaDermatologicaRoute: ServiciiEsteticaDermatologicaRoute,
+  ServiciiExionRoute: ServiciiExionRoute,
+  ServiciiHydrafacialRoute: ServiciiHydrafacialRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
