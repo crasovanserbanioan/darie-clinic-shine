@@ -15,5 +15,4 @@ export const SERVICE_ROUTES = [
   { to: "/servicii/estetica-dermatologica", label: "Estetică Dermatologică" },
   { to: "/servicii/hydrafacial", label: "Hydrafacial" },
   { to: "/servicii/epilare-definitiva", label: "Epilare Definitivă" },
-  { to: "/servicii/exion", label: "Exion" },
 ] as const;
