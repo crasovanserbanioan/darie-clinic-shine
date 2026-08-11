@@ -11,6 +11,15 @@ import scleroAsset from "@/assets/scleroterapie.jpg.asset.json";
 import co2Asset from "@/assets/CO2.jpg.asset.json";
 import chirurgieAsset from "@/assets/chirurgiedermatologica.jpg.asset.json";
 import biopsieAsset from "@/assets/biopsiacutanata.jpg.asset.json";
+import acidHialuronicAsset from "@/assets/acidhialuronic.jpg.asset.json";
+import dermapenAsset from "@/assets/dermapen4.jpg.asset.json";
+import harmonyCaAsset from "@/assets/HarmonyCa.jpg.asset.json";
+import mezoterapieAsset from "@/assets/mezoterapie.jpg.asset.json";
+import cosmelanAsset from "@/assets/peelingcosmelan.jpg.asset.json";
+import prpAsset from "@/assets/prpterapiavampir.jpg.asset.json";
+import sculptraAsset from "@/assets/SculptraAcidPoli.jpg.asset.json";
+import botoxAsset from "@/assets/toxinabotulinica.jpg.asset.json";
+import fireAsset from "@/assets/Firebioresorbabile.jpg.asset.json";
 
 /**
  * Imaginile foto ale clinicii.
