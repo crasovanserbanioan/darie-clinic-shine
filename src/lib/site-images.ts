@@ -19,6 +19,8 @@ import cosmelanAsset from "@/assets/peelingcosmelan.jpg.asset.json";
 import prpAsset from "@/assets/prpterapiavampir.jpg.asset.json";
 import sculptraAsset from "@/assets/SculptraAcidPoli.jpg.asset.json";
 import botoxAsset from "@/assets/toxinabotulinica.jpg.asset.json";
+import hydraAparatAsset from "@/assets/hydrabeauty-aparat.jpg.asset.json";
+import hydraTratamentAsset from "@/assets/hydrabeauty-tratament.jpg.asset.json";
 import fireAsset from "@/assets/Firebioresorbabile.jpg.asset.json";
 import peelingChimicAsset from "@/assets/PeelingChimic.jpg.asset.json";
 import pbSerumAsset from "@/assets/pbserum.jpg.asset.json";
@@ -56,6 +58,7 @@ export type SiteImageKey =
   | "aparatRosacee"
   | "alunitaMana"
   | "hydraBeauty"
+  | "hydraBeautyAparat"
   | "aparatFata"
   | "aparat"
   | "aparatClinica"
@@ -88,7 +91,8 @@ export const siteImages: Record<SiteImageKey, string | null> = {
   pensulaCrema: peelingChimicAsset.url,
   aparatRosacee: electroAsset.url,
   alunitaMana: chiuretareAsset.url,
-  hydraBeauty: null,
+  hydraBeauty: hydraTratamentAsset.url,
+  hydraBeautyAparat: hydraAparatAsset.url,
   aparatFata: prxAsset.url,
   aparat: null,
   aparatClinica: null,
