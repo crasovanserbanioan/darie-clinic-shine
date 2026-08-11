@@ -80,7 +80,7 @@ const items: SubService[] = [
     title: "PB Serum",
     description:
       "Enzime recombinate care remodelează țesutul, reduc fibroza și îmbunătățesc aspectul pielii.",
-    image: "injectiePometi",
+    image: "harmonyCaCutie",
   },
   {
     title: "Fire bioresorbabile",
