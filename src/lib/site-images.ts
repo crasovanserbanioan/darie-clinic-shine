@@ -9,6 +9,8 @@ import chiuretareAsset from "@/assets/chiuretare.jpg.asset.json";
 import electroAsset from "@/assets/electrocauterizare.jpg.asset.json";
 import scleroAsset from "@/assets/scleroterapie.jpg.asset.json";
 import co2Asset from "@/assets/CO2.jpg.asset.json";
+import chirurgieAsset from "@/assets/chirurgiedermatologica.jpg.asset.json";
+import biopsieAsset from "@/assets/biopsiacutanata.jpg.asset.json";
 
 /**
  * Imaginile foto ale clinicii.
@@ -58,8 +60,8 @@ export const siteImages: Record<SiteImageKey, string | null> = {
   drVladPopescu: vladAsset.url,
   alunitaLupa: consultatiiAsset.url,
   insemnareCreion: dermatoscopieAsset.url,
-  cusut: null,
-  extragereAlunita: null,
+  cusut: chirurgieAsset.url,
+  extragereAlunita: biopsieAsset.url,
   riduriInjectie: null,
   injectieBuze: null,
   injectiePometi: null,
