@@ -11,6 +11,15 @@ import scleroAsset from "@/assets/scleroterapie.jpg.asset.json";
 import co2Asset from "@/assets/CO2.jpg.asset.json";
 import chirurgieAsset from "@/assets/chirurgiedermatologica.jpg.asset.json";
 import biopsieAsset from "@/assets/biopsiacutanata.jpg.asset.json";
+import acidHialuronicAsset from "@/assets/acidhialuronic.jpg.asset.json";
+import dermapenAsset from "@/assets/dermapen4.jpg.asset.json";
+import harmonyCaAsset from "@/assets/HarmonyCa.jpg.asset.json";
+import mezoterapieAsset from "@/assets/mezoterapie.jpg.asset.json";
+import cosmelanAsset from "@/assets/peelingcosmelan.jpg.asset.json";
+import prpAsset from "@/assets/prpterapiavampir.jpg.asset.json";
+import sculptraAsset from "@/assets/SculptraAcidPoli.jpg.asset.json";
+import botoxAsset from "@/assets/toxinabotulinica.jpg.asset.json";
+import fireAsset from "@/assets/Firebioresorbabile.jpg.asset.json";
 
 /**
  * Imaginile foto ale clinicii.
@@ -47,7 +56,10 @@ export type SiteImageKey =
   | "aparatFata"
   | "aparat"
   | "aparatClinica"
-  | "laserCO2";
+  | "laserCO2"
+  | "dermapen4"
+  | "peelingCosmelan"
+  | "mezoterapie";
 
 export const siteImages: Record<SiteImageKey, string | null> = {
   logo: logoAsset.url,
@@ -62,15 +74,15 @@ export const siteImages: Record<SiteImageKey, string | null> = {
   insemnareCreion: dermatoscopieAsset.url,
   cusut: chirurgieAsset.url,
   extragereAlunita: biopsieAsset.url,
-  riduriInjectie: null,
-  injectieBuze: null,
-  injectiePometi: null,
-  reclamaHarmony: null,
+  riduriInjectie: botoxAsset.url,
+  injectieBuze: acidHialuronicAsset.url,
+  injectiePometi: fireAsset.url,
+  reclamaHarmony: harmonyCaAsset.url,
   harmonyCaCutie: null,
-  sculptraAcidPoli: null,
-  injectieCap: null,
+  sculptraAcidPoli: sculptraAsset.url,
+  injectieCap: prpAsset.url,
   injectieCirculatie: scleroAsset.url,
-  pensulaCrema: null,
+  pensulaCrema: cosmelanAsset.url,
   aparatRosacee: electroAsset.url,
   alunitaMana: chiuretareAsset.url,
   hydraBeauty: null,
@@ -78,4 +90,7 @@ export const siteImages: Record<SiteImageKey, string | null> = {
   aparat: null,
   aparatClinica: null,
   laserCO2: co2Asset.url,
+  dermapen4: dermapenAsset.url,
+  peelingCosmelan: cosmelanAsset.url,
+  mezoterapie: mezoterapieAsset.url,
 };
