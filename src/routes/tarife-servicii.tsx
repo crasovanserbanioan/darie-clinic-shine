@@ -1,20 +1,16 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero, PageShell, Section } from "@/components/page-shell";
 import { Flipbook, type FlipPage } from "@/components/flipbook";
-import p1 from "@/assets/brochure/pagina-1.png.asset.json";
-import p2 from "@/assets/brochure/pagina-2.png.asset.json";
-import p3 from "@/assets/brochure/pagina-3.png.asset.json";
-import p4 from "@/assets/brochure/pagina-4.png.asset.json";
-import p5 from "@/assets/brochure/pagina-5.png.asset.json";
-import p6 from "@/assets/brochure/pagina-6.png.asset.json";
-import p7 from "@/assets/brochure/pagina-7.png.asset.json";
-import p8 from "@/assets/brochure/pagina-8.png.asset.json";
-import p9 from "@/assets/brochure/pagina-9.png.asset.json";
-import p10 from "@/assets/brochure/pagina-10.png.asset.json";
-import p11 from "@/assets/brochure/pagina-11.png.asset.json";
-import p12 from "@/assets/brochure/pagina-12.png.asset.json";
-import p13 from "@/assets/brochure/pagina-13.png.asset.json";
-import p14 from "@/assets/brochure/pagina-14.jpg.asset.json";
+import p1 from "@/assets/brochure2/preturi1.webp.asset.json";
+import p2 from "@/assets/brochure2/preturi2.webp.asset.json";
+import p3 from "@/assets/brochure2/preturi3.webp.asset.json";
+import p4 from "@/assets/brochure2/preturi4.webp.asset.json";
+import p5 from "@/assets/brochure2/preturi5.webp.asset.json";
+import p6 from "@/assets/brochure2/preturi6.webp.asset.json";
+import p7 from "@/assets/brochure2/preturi7.webp.asset.json";
+import p8 from "@/assets/brochure2/preturi8.webp.asset.json";
+import p9 from "@/assets/brochure2/preturi9.webp.asset.json";
+import p10 from "@/assets/brochure2/preturi10.webp.asset.json";
 
 export const Route = createFileRoute("/tarife-servicii")({
   head: () => ({
