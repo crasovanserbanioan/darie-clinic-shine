@@ -86,10 +86,17 @@ export function Footer() {
       </div>
       <div className="border-t border-primary-foreground/15 px-4 py-5 lg:px-8">
         <div className="mx-auto flex max-w-7xl flex-col items-center gap-4 sm:flex-row sm:justify-between">
-          <p className="text-xs text-primary-foreground/60">
-            © {new Date().getFullYear()} Clinica Darie. Toate drepturile rezervate.
-          </p>
+          <div className="text-center sm:text-left">
+            <p className="text-xs text-primary-foreground/60">
+              © {new Date().getFullYear()} Clinica Darie. Toate drepturile rezervate.
+            </p>
+            <p className="mt-1 text-xs text-primary-foreground/50">
+              Dermato Darie S.R.L. | CUI: 45834839 | Reg. Com.: J2022001240355 | Sediu: Str.
+              Superba 10 Et. P Ap. 2 Cod 307160
+            </p>
+          </div>
           <a
+
             href="https://anpc.ro/ce-este-sal/"
             target="_blank"
             rel="noopener noreferrer"
