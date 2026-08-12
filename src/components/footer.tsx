@@ -84,9 +84,40 @@ export function Footer() {
           </ul>
         </div>
       </div>
-      <div className="border-t border-primary-foreground/15 py-5 text-center text-xs text-primary-foreground/60">
-        © {new Date().getFullYear()} Clinica Darie. Toate drepturile rezervate.
+      <div className="border-t border-primary-foreground/15 px-4 py-5 lg:px-8">
+        <div className="mx-auto flex max-w-7xl flex-col items-center gap-4 sm:flex-row sm:justify-between">
+          <p className="text-xs text-primary-foreground/60">
+            © {new Date().getFullYear()} Clinica Darie. Toate drepturile rezervate.
+          </p>
+          <div className="flex flex-col items-center gap-3 sm:flex-row">
+            <a
+              href="https://anpc.ro/ce-este-sal/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/anpc-sal.png"
+                alt="Solutionarea Alternativa a Litigiilor"
+                className="h-12 w-auto max-w-full rounded-md bg-background"
+                loading="lazy"
+              />
+            </a>
+            <a
+              href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&lng=RO"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/anpc-sol.png"
+                alt="Solutionarea Online a Litigiilor"
+                className="h-12 w-auto max-w-full rounded-md bg-background"
+                loading="lazy"
+              />
+            </a>
+          </div>
+        </div>
       </div>
+
     </footer>
   );
 }
